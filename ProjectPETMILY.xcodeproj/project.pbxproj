@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27354C871890DB5D0097AA4E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27354C861890DB5D0097AA4E /* LoginViewController.m */; };
+		27354C911890DEEC0097AA4E /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27354C891890DEEC0097AA4E /* image1.jpg */; };
+		27354C921890DEEC0097AA4E /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27354C8A1890DEEC0097AA4E /* image2.jpg */; };
+		27354C931890DEEC0097AA4E /* image3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 27354C8B1890DEEC0097AA4E /* image3.JPG */; };
+		27354C941890DEEC0097AA4E /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27354C8C1890DEEC0097AA4E /* image4.jpg */; };
+		27354C951890DEEC0097AA4E /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27354C8D1890DEEC0097AA4E /* image5.jpg */; };
+		27354C961890DEEC0097AA4E /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27354C8E1890DEEC0097AA4E /* image6.jpg */; };
+		27354C971890DEEC0097AA4E /* image7.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 27354C8F1890DEEC0097AA4E /* image7.JPG */; };
+		27354C981890DEEC0097AA4E /* image8.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 27354C901890DEEC0097AA4E /* image8.JPG */; };
 		276EF3BB1890A46B000AFBE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276EF3BA1890A46B000AFBE1 /* Foundation.framework */; };
 		276EF3BD1890A46B000AFBE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276EF3BC1890A46B000AFBE1 /* CoreGraphics.framework */; };
 		276EF3BF1890A46B000AFBE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276EF3BE1890A46B000AFBE1 /* UIKit.framework */; };
@@ -34,6 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27354C851890DB5D0097AA4E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		27354C861890DB5D0097AA4E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		27354C891890DEEC0097AA4E /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		27354C8A1890DEEC0097AA4E /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		27354C8B1890DEEC0097AA4E /* image3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.JPG; sourceTree = "<group>"; };
+		27354C8C1890DEEC0097AA4E /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		27354C8D1890DEEC0097AA4E /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpg; sourceTree = "<group>"; };
+		27354C8E1890DEEC0097AA4E /* image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image6.jpg; sourceTree = "<group>"; };
+		27354C8F1890DEEC0097AA4E /* image7.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image7.JPG; sourceTree = "<group>"; };
+		27354C901890DEEC0097AA4E /* image8.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image8.JPG; sourceTree = "<group>"; };
 		276EF3B71890A46B000AFBE1 /* ProjectPETMILY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectPETMILY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		276EF3BA1890A46B000AFBE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		276EF3BC1890A46B000AFBE1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,9 +98,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27354C881890DEEC0097AA4E /* ImageResource */ = {
+			isa = PBXGroup;
+			children = (
+				27354C891890DEEC0097AA4E /* image1.jpg */,
+				27354C8A1890DEEC0097AA4E /* image2.jpg */,
+				27354C8B1890DEEC0097AA4E /* image3.JPG */,
+				27354C8C1890DEEC0097AA4E /* image4.jpg */,
+				27354C8D1890DEEC0097AA4E /* image5.jpg */,
+				27354C8E1890DEEC0097AA4E /* image6.jpg */,
+				27354C8F1890DEEC0097AA4E /* image7.JPG */,
+				27354C901890DEEC0097AA4E /* image8.JPG */,
+			);
+			path = ImageResource;
+			sourceTree = "<group>";
+		};
 		276EF3AE1890A46B000AFBE1 = {
 			isa = PBXGroup;
 			children = (
+				27354C881890DEEC0097AA4E /* ImageResource */,
+				27354C851890DB5D0097AA4E /* LoginViewController.h */,
+				27354C861890DB5D0097AA4E /* LoginViewController.m */,
 				276EF3C01890A46B000AFBE1 /* ProjectPETMILY */,
 				276EF3DF1890A46B000AFBE1 /* ProjectPETMILYTests */,
 				276EF3B91890A46B000AFBE1 /* Frameworks */,
@@ -229,8 +266,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				276EF3D31890A46B000AFBE1 /* Images.xcassets in Resources */,
+				27354C981890DEEC0097AA4E /* image8.JPG in Resources */,
+				27354C971890DEEC0097AA4E /* image7.JPG in Resources */,
+				27354C951890DEEC0097AA4E /* image5.jpg in Resources */,
+				27354C921890DEEC0097AA4E /* image2.jpg in Resources */,
+				27354C911890DEEC0097AA4E /* image1.jpg in Resources */,
 				276EF3C51890A46B000AFBE1 /* InfoPlist.strings in Resources */,
+				27354C941890DEEC0097AA4E /* image4.jpg in Resources */,
+				27354C961890DEEC0097AA4E /* image6.jpg in Resources */,
 				276EF3CE1890A46B000AFBE1 /* Main.storyboard in Resources */,
+				27354C931890DEEC0097AA4E /* image3.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27354C871890DB5D0097AA4E /* LoginViewController.m in Sources */,
 				276EF3D11890A46B000AFBE1 /* ViewController.m in Sources */,
 				276EF3CB1890A46B000AFBE1 /* AppDelegate.m in Sources */,
 				276EF3C71890A46B000AFBE1 /* main.m in Sources */,
@@ -460,6 +506,7 @@
 				276EF3EB1890A46B000AFBE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		276EF3EC1890A46B000AFBE1 /* Build configuration list for PBXNativeTarget "ProjectPETMILYTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +515,7 @@
 				276EF3EE1890A46B000AFBE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
