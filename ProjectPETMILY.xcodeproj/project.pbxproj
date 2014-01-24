@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27354C871890DB5D0097AA4E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27354C861890DB5D0097AA4E /* LoginViewController.m */; };
 		27354C911890DEEC0097AA4E /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27354C891890DEEC0097AA4E /* image1.jpg */; };
 		27354C921890DEEC0097AA4E /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27354C8A1890DEEC0097AA4E /* image2.jpg */; };
 		27354C931890DEEC0097AA4E /* image3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 27354C8B1890DEEC0097AA4E /* image3.JPG */; };
@@ -30,6 +29,8 @@
 		276EF3DC1890A46B000AFBE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276EF3BE1890A46B000AFBE1 /* UIKit.framework */; };
 		276EF3E41890A46B000AFBE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 276EF3E21890A46B000AFBE1 /* InfoPlist.strings */; };
 		276EF3E61890A46B000AFBE1 /* ProjectPETMILYTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 276EF3E51890A46B000AFBE1 /* ProjectPETMILYTests.m */; };
+		27DEE8EA1891FAA300582B07 /* PetCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DEE8E91891FAA300582B07 /* PetCMainViewController.m */; };
+		27DEE8EC1891FE1A00582B07 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DEE8EB1891FE1A00582B07 /* line.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		27354C851890DB5D0097AA4E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		27354C861890DB5D0097AA4E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		27354C891890DEEC0097AA4E /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		27354C8A1890DEEC0097AA4E /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
 		27354C8B1890DEEC0097AA4E /* image3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.JPG; sourceTree = "<group>"; };
@@ -72,6 +71,9 @@
 		276EF3E11890A46B000AFBE1 /* ProjectPETMILYTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProjectPETMILYTests-Info.plist"; sourceTree = "<group>"; };
 		276EF3E31890A46B000AFBE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		276EF3E51890A46B000AFBE1 /* ProjectPETMILYTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectPETMILYTests.m; sourceTree = "<group>"; };
+		27DEE8E81891FAA300582B07 /* PetCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetCMainViewController.h; sourceTree = "<group>"; };
+		27DEE8E91891FAA300582B07 /* PetCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetCMainViewController.m; sourceTree = "<group>"; };
+		27DEE8EB1891FE1A00582B07 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		27354C881890DEEC0097AA4E /* ImageResource */ = {
 			isa = PBXGroup;
 			children = (
+				27DEE8EB1891FE1A00582B07 /* line.png */,
 				27354C891890DEEC0097AA4E /* image1.jpg */,
 				27354C8A1890DEEC0097AA4E /* image2.jpg */,
 				27354C8B1890DEEC0097AA4E /* image3.JPG */,
@@ -116,9 +119,9 @@
 		276EF3AE1890A46B000AFBE1 = {
 			isa = PBXGroup;
 			children = (
+				27DEE8E81891FAA300582B07 /* PetCMainViewController.h */,
+				27DEE8E91891FAA300582B07 /* PetCMainViewController.m */,
 				27354C881890DEEC0097AA4E /* ImageResource */,
-				27354C851890DB5D0097AA4E /* LoginViewController.h */,
-				27354C861890DB5D0097AA4E /* LoginViewController.m */,
 				276EF3C01890A46B000AFBE1 /* ProjectPETMILY */,
 				276EF3DF1890A46B000AFBE1 /* ProjectPETMILYTests */,
 				276EF3B91890A46B000AFBE1 /* Frameworks */,
@@ -276,6 +279,7 @@
 				27354C961890DEEC0097AA4E /* image6.jpg in Resources */,
 				276EF3CE1890A46B000AFBE1 /* Main.storyboard in Resources */,
 				27354C931890DEEC0097AA4E /* image3.JPG in Resources */,
+				27DEE8EC1891FE1A00582B07 /* line.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27354C871890DB5D0097AA4E /* LoginViewController.m in Sources */,
+				27DEE8EA1891FAA300582B07 /* PetCMainViewController.m in Sources */,
 				276EF3D11890A46B000AFBE1 /* ViewController.m in Sources */,
 				276EF3CB1890A46B000AFBE1 /* AppDelegate.m in Sources */,
 				276EF3C71890A46B000AFBE1 /* main.m in Sources */,

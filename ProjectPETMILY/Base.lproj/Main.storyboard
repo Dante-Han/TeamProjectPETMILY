@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="-29" y="-946"/>
         </scene>
-        <!--1_LOGIN_View Controller-->
+        <!--1_PetsCupMain_View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" userLabel="1_LOGIN_View Controller" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" userLabel="1_PetsCupMain_View Controller" customClass="PetCMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ag6-lg-m4C"/>
                         <viewControllerLayoutGuide type="bottom" id="FxY-El-CD0"/>
@@ -88,8 +88,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OiY-3c-g72">
-                                <rect key="frame" x="0.0" y="224" width="320" height="295"/>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OiY-3c-g72">
+                                <rect key="frame" x="70" y="268" width="250" height="251"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Sid-Ex-AL8">
@@ -115,17 +115,70 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="eSE-N8-dse"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="가장 예쁜 펫을 선택해 주세요" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFc-KK-qEW">
+                                <rect key="frame" x="0.0" y="194" width="127" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2014.01.20-2014.01.30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEj-0j-j46">
+                                <rect key="frame" x="119" y="194" width="98" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEn-ST-dOE">
+                                <rect key="frame" x="11" y="20" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SMd-LK-Cgu">
+                                <rect key="frame" x="0.0" y="215" width="71" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YH6-Ha-RW2">
+                                <rect key="frame" x="0.0" y="49" width="159" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xx8-SX-zew">
+                                <rect key="frame" x="160" y="49" width="160" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dyF-ey-rSy">
+                                <rect key="frame" x="0.0" y="268" width="71" height="251"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HONOR_CELL" id="jyJ-rB-oAr">
+                                        <rect key="frame" x="0.0" y="22" width="71" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jyJ-rB-oAr" id="MzS-bT-Htj">
+                                            <rect key="frame" x="0.0" y="0.0" width="71" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="uPU-ei-yEF"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="Vpu-z1-zWI"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Petmily" id="FSm-bf-JAR"/>
+                    <tabBarItem key="tabBarItem" title="PetsCup" id="FSm-bf-JAR"/>
                     <connections>
-                        <outlet property="collectionView" destination="OiY-3c-g72" id="A1I-x3-gxO"/>
+                        <outlet property="HonorTable" destination="dyF-ey-rSy" id="EFh-ED-GZq"/>
+                        <outlet property="collectionView" destination="OiY-3c-g72" id="hKT-6b-2in"/>
+                        <outlet property="leftPet" destination="YH6-Ha-RW2" id="Caa-qW-Z2q"/>
+                        <outlet property="rightPet" destination="xx8-SX-zew" id="HpN-3S-bh7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="990" y="-639"/>
+            <point key="canvasLocation" x="926" y="-706"/>
         </scene>
         <!--UPLOAD_View Controller-->
         <scene sceneID="Mnd-2Q-lUz">
@@ -162,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1a-uU-AtD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2127" y="-723"/>
+            <point key="canvasLocation" x="1389" y="-649"/>
         </scene>
         <!--NEIGHBOR_View Controller-->
         <scene sceneID="t9n-Ql-slS">
@@ -207,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2Z-Mi-Wyb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="901" y="125"/>
+            <point key="canvasLocation" x="1209" y="141"/>
         </scene>
         <!--NON_LOGIN_View Controller-->
         <scene sceneID="HUY-iq-pNj">
