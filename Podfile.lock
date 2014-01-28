@@ -1,0 +1,13 @@
+PODS:
+  - EasyTableView (1.1.1)
+  - GMGridView (1.1.1)
+
+DEPENDENCIES:
+  - EasyTableView (~> 1.1.1)
+  - GMGridView (~> 1.1.1)
+
+SPEC CHECKSUMS:
+  EasyTableView: 5d6f13647b9f381559bda84995e9e257541cae1f
+  GMGridView: a17a31f010990eb8f802abb4cab50e6e03e993ea
+
+COCOAPODS: 0.29.0

@@ -13,6 +13,8 @@
         UISegmentedControl *middleSegment;
 }
 
+
+
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) NSMutableArray *dogImage;
 
@@ -62,51 +64,12 @@
 
     [self.view addSubview:middleSegment];
 
+
     [self.HonorTable reloadData];
     [self.collectionView reloadData];
 	// Do any additional setup after loading the view.
 }
 //segment Action
-
-
-
--(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
-{
-    return _dogImage.count;
-}
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return  _dogImage.count;
-}
-
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    UICollectionViewCell *imageCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"IMAGE_CELL" forIndexPath:indexPath];
-    UIImage *image;
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(10,10,95, 135)];
-
-    NSInteger row = indexPath.row;
-    image = [UIImage imageNamed:[_dogImage objectAtIndex:row]];
-
-    imageView.image = image;
-
-    //    imageCell.backgroundColor = [UIColor whiteColor];
-    [imageCell addSubview:imageView];
-    return imageCell;
-}
-
-
-// custom layout
--(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath // cell의 크기를 정하는 걸로 보인다.
-{
-    CGSize retVal = CGSizeMake(100,150);
-    return retVal;
-}
-
--(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section // cell, header, footer간의 간격을 리턴한다.
-{
-    return UIEdgeInsetsMake(10,20,1,10);
-}
 
 
 
@@ -133,6 +96,7 @@
     [cell addSubview:imageView];
     return cell;
 }
+
 
 - (IBAction)handleSegmentSelection:(id)sender {
 
