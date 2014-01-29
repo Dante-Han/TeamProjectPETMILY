@@ -37,7 +37,8 @@ static FeedInfo *_instance = nil;
 
         NSString *imageString;
         feedData = [[NSMutableArray alloc]init];
-        for(int i = 1; i<8; i++)
+
+        for(int i = 1; i<14; i++)
         {
             imageString = [NSString stringWithFormat:@"image%d.jpg",i];
 

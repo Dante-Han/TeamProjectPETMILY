@@ -1,5 +1,5 @@
 //
-//  FeedDelegate.h
+//  HonorInfo.h
 //  ProjectPETMILY
 //
 //  Created by 한상민(iPhone) on 2014. 1. 29..
@@ -7,19 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@protocol FeedDelegate <NSObject>
-
-@end
-
-@protocol FeedInfoDelegate <NSObject>
-
--(int)feedCount;
+#import "HonorList.h"
 
 
-@end
+@interface HonorInfo : NSObject
 
-@protocol FeedCellDelegate <NSObject>
-
+-(int)listCount;
+-(id)listAt:(int)index;
++(id)defaultHonor;
 
 @end

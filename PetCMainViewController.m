@@ -9,6 +9,10 @@
 #import "PetCMainViewController.h"
 #import "FeedInfo.h"
 #import "FeedInCell.h"
+#import "HonorInfo.h"
+#import "HonorCell.h"
+
+
 
 #define CELL_ID @"FEED_CELL"
 
@@ -19,8 +23,11 @@
 
 
 }
+@property (weak, nonatomic) IBOutlet UIView *burgerView;
+
 
 @property (strong,nonatomic) FeedInfo *feedInfo;
+@property (strong,nonatomic) HonorInfo *honorInfo;
 
 @property (weak, nonatomic) IBOutlet UIView *startVoteView;
 
@@ -80,42 +87,28 @@
 }
 
 
-// custom layout
-/*-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath // cell의 크기를 정하는 걸로 보인다.
-{
-    CGSize retVal = CGRectMake(0, 0, CGFloat width, <#CGFloat height#>)
-    return retVal;
-}*/
-
-/*-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section // cell, header, footer간의 간격을 리턴한다.
-{
-    return UIEdgeInsetsMake(10,20,1,10);
-}*/
-
--(void)middleSegment
+/*-(void)middleSegment
 {
     NSArray *items = @[@"All",@"Cute",@"Love",@"Fun",@"With"];
     middleSegment = [[UISegmentedControl alloc]initWithItems:items];
-    middleSegment.frame = CGRectMake(90, 220, 300, 40);
+    middleSegment.frame = CGRectMake(67, 220, 250, 40);
      [self.view addSubview:middleSegment];
 
-}
+}*/
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
- /* _dogImage=[@[@"image1.jpg",@"image2.jpg",@"image3.jpg",@"image4.jpg",
-                 @"image5.jpg",@"image6.jpg",@"image7.jpg",@"image8.jpg"]mutableCopy];
-
-    _honorImage = [@[@"image5.jpg",@"line.png",@"image4,jpg",@"line.png",@"image7.jpg"]mutableCopy];
-    versusPet = [NSArray arrayWithObjects:@"image1.jpg",@"image2.jpg", nil];*/
 
     self.feedInfo = [FeedInfo defaultFeedInfo];
 
+    self.honorInfo = [HonorInfo defaultHonor];
+    self.burgerView.hidden = YES;
 
-    [self middleSegment];
+
     [self.mainCollection reloadData];
     [self.HonorTable reloadData];
+
 	// Do any additional setup after loading the view.
 }
 //segment Action
@@ -129,21 +122,34 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.honorImage.count;
+
+    return [self.honorInfo listCount];
+
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HONOR_CELL" forIndexPath:indexPath];
-    UIImageView *imageView= [[UIImageView alloc]initWithFrame:CGRectMake(3, 3, 40, 40)];
-    UIImage *image;
 
-    NSInteger row = indexPath.row;
-    image = [UIImage imageNamed:[_honorImage objectAtIndex:row]];
-    imageView.image = image;
+    HonorCell *cell= [tableView dequeueReusableCellWithIdentifier:@"HONOR_CELL" forIndexPath:indexPath];
 
-    [cell addSubview:imageView];
+    HonorList *list = [[HonorInfo defaultHonor]listAt:(int)indexPath.row];
+
+    [cell setList:list];
+
+
     return cell;
+}
+
+- (IBAction)burgerShowClick:(id)sender {
+
+    if(self.burgerView.hidden!=YES)
+    {
+    self.burgerView.hidden = YES;
+    }
+    else
+    {
+        self.burgerView.hidden=NO;
+    }
 }
 
 

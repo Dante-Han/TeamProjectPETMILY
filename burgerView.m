@@ -1,28 +1,14 @@
 //
-//  FeedInCell.m
+//  burgerView.m
 //  ProjectPETMILY
 //
 //  Created by 한상민(iPhone) on 2014. 1. 29..
 //  Copyright (c) 2014년 한상민(개만정벌). All rights reserved.
 //
 
-#import "FeedInCell.h"
-#import "FeedItem.h"
+#import "burgerView.h"
 
-@interface FeedInCell()
-
-@property (weak, nonatomic) IBOutlet UIImageView *petImageView;
-
-@end
-
-
-@implementation FeedInCell
-
--(void)setFeed:(FeedItem *)item
-{
-    self.petImageView.image = [UIImage imageNamed:item.petImage];
-
-}
+@implementation burgerView
 
 - (id)initWithFrame:(CGRect)frame
 {

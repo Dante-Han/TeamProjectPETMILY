@@ -28,7 +28,7 @@
 }
 
 -(void)setupHorizontalView;
--(void)setupGridView;
+
 
 @property (nonatomic) EasyTableView *horizontalView;
 
@@ -37,111 +37,6 @@
 
 
 @implementation LoginViewController
-
-
-/*-(void)setupGridView
-{
-    GMGridView *gmGridView = [[GMGridView alloc]initWithFrame:CGRectMake(160, 300, 160, 150)];
-
-    gmGridView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    gmGridView.backgroundColor = [UIColor clearColor];
-                                  [self.view addSubview:gmGridView];
-                                   _gmGridView = gmGridView;
-    NSInteger spacing = INTERFACE_IS_PHONE ? 10 : 15;
-
-            _gmGridView.style = GMGridViewStyleSwap;
-            _gmGridView.itemSpacing = spacing;
-            _gmGridView.minEdgeInsets = UIEdgeInsetsMake(spacing, spacing, spacing, spacing);
-            _gmGridView.centerGrid = YES;
-            _gmGridView.actionDelegate = self;
-                _gmGridView.sortingDelegate = self;
-    _gmGridView.transformDelegate = self;
-            _gmGridView.dataSource = self;
-
-
-    [self.view addSubview:gmGridView];
-}
-
--(NSInteger)numberOfItemsInGMGridView:(GMGridView *)gridView
-{
-    return [_currentData count];
-}
-
--(CGSize)GMGridView:(GMGridView *)gridView sizeForItemsInInterfaceOrientation:(UIInterfaceOrientation)orientation
-{
-
-   // if (INTERFACE_IS_PHONE)
-    //{
-        if (UIInterfaceOrientationIsLandscape(orientation))
-        {
-            return CGSizeMake(160, 135);
-        }
-        else
-        {
-            return CGSizeMake(140, 110);
-        }
-    //}
-    else
-    {
-        if (UIInterfaceOrientationIsLandscape(orientation))
-        {
-            return CGSizeMake(285, 205);
-        }
-        else
-        {
-            return CGSizeMake(230, 175);
-        }
-    }
-
-}
-
-
-- (GMGridViewCell *)GMGridView:(GMGridView *)gridView cellForItemAtIndex:(NSInteger)index
-{
-    //NSLog(@"Creating view indx %d", index);
-
-    CGSize size = [self GMGridView:gridView sizeForItemsInInterfaceOrientation:[[UIApplication sharedApplication] statusBarOrientation]];
-
-    GMGridViewCell *cell = [gridView dequeueReusableCell];
-
-    if (!cell)
-    {
-        cell = [[GMGridViewCell alloc] init];
-        cell.deleteButtonIcon = [UIImage imageNamed:@"close_x.png"];
-        cell.deleteButtonOffset = CGPointMake(-15, -15);
-
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, size.height)];
-        view.backgroundColor = [UIColor clearColor];
-        view.layer.masksToBounds = NO;
-        view.layer.cornerRadius = 10;
-
-        cell.contentView = view;
-    }
-
-    [[cell.contentView subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
-
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, size.width, size.height)];
-    UIImage *image = [UIImage imageNamed:[_currentData objectAtIndex:index]];
-
-    NSLog(@"%@",[_currentData objectAtIndex:index]);
-
-    imageView.image = image;
-
-    [cell.contentView addSubview:imageView];
-
-    return cell;
-}
-
-
-- (BOOL)GMGridView:(GMGridView *)gridView canDeleteItemAtIndex:(NSInteger)index
-{
-    return YES; //index % 2 == 0;
-}
-
-
-*/
-
-
 
 - (void)borderIsSelected:(BOOL)selected forView:(UIView *)view {
 	UIImageView *borderView		= (UIImageView *)[view viewWithTag:BORDER_VIEW_TAG];
@@ -204,14 +99,8 @@
 {
     [super viewDidLoad];
 
-    imageData1 =[NSMutableArray arrayWithObjects:@"image1.jpg",@"image2.jpg",@"image3.jpg",@"image4.jpg",@"image5.jpg",@"image6.jpg",@"image7.jpg",@"image8.jpg", nil];
-
-
-  //  _currentData = imageData1;
 
     [self setupHorizontalView];
-    [self setupGridView];
-
 
 	// Do any additional setup after loading the view.
 }
