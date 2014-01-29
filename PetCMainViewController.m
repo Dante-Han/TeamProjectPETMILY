@@ -23,6 +23,8 @@
 
 
 }
+@property (weak, nonatomic) IBOutlet UIView *mypageContainer;
+
 @property (weak, nonatomic) IBOutlet UIView *burgerView;
 
 
@@ -87,15 +89,6 @@
 }
 
 
-/*-(void)middleSegment
-{
-    NSArray *items = @[@"All",@"Cute",@"Love",@"Fun",@"With"];
-    middleSegment = [[UISegmentedControl alloc]initWithItems:items];
-    middleSegment.frame = CGRectMake(67, 220, 250, 40);
-     [self.view addSubview:middleSegment];
-
-}*/
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -112,7 +105,14 @@
 	// Do any additional setup after loading the view.
 }
 //segment Action
+- (IBAction)petsCupClick:(id)sender {
+    self.mypageContainer.hidden = YES;
+    
+}
 
+- (IBAction)mypageClick:(id)sender {
+     self.mypageContainer.hidden = NO;
+}
 
 
 // table view delegate
@@ -142,14 +142,37 @@
 
 - (IBAction)burgerShowClick:(id)sender {
 
-    if(self.burgerView.hidden!=YES)
+    BOOL moveFlag;
+    
+
+    
+    if((int)self.burgerView.center.x == 320)
     {
-    self.burgerView.hidden = YES;
+        moveFlag = YES;
+    }
+    else{
+        moveFlag = NO;
+    }
+    
+    if(moveFlag)
+    {
+        self.burgerView.hidden=NO;
+        [UIView beginAnimations:nil context:NULL];
+        [UIView setAnimationDuration:1];
+        self.burgerView.center = CGPointMake(self.burgerView.center.x-270,self.burgerView.center.y);
+        [UIView commitAnimations];
     }
     else
     {
-        self.burgerView.hidden=NO;
+        [UIView beginAnimations:nil context:NULL];
+        [UIView setAnimationDuration:0.5];
+        self.burgerView.center = CGPointMake(self.burgerView.center.x+270, self.burgerView.center.y);
+        [UIView commitAnimations];
+
     }
+    
+        
+    
 }
 
 
