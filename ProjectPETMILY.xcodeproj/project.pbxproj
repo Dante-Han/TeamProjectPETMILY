@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27286F9C18978C88005D85E3 /* FeedCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27286F9B18978C88005D85E3 /* FeedCollectionView.m */; };
-		27286F9F18978CEB005D85E3 /* FeedInCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27286F9E18978CEB005D85E3 /* FeedInCell.m */; };
+		27286FA218988C7D005D85E3 /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 27286FA118988C7D005D85E3 /* FeedItem.m */; };
+		27286FA518988F80005D85E3 /* FeedInCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27286FA418988F80005D85E3 /* FeedInCell.m */; };
+		27286FA818989216005D85E3 /* FeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27286FA718989216005D85E3 /* FeedView.m */; };
 		27354C911890DEEC0097AA4E /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27354C891890DEEC0097AA4E /* image1.jpg */; };
 		27354C921890DEEC0097AA4E /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27354C8A1890DEEC0097AA4E /* image2.jpg */; };
 		27354C931890DEEC0097AA4E /* image3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 27354C8B1890DEEC0097AA4E /* image3.JPG */; };
@@ -33,8 +34,6 @@
 		276EF3E61890A46B000AFBE1 /* ProjectPETMILYTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 276EF3E51890A46B000AFBE1 /* ProjectPETMILYTests.m */; };
 		27DEE8EA1891FAA300582B07 /* PetCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DEE8E91891FAA300582B07 /* PetCMainViewController.m */; };
 		27DEE8EC1891FE1A00582B07 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DEE8EB1891FE1A00582B07 /* line.png */; };
-		27DEE8EF1892306700582B07 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DEE8EE1892306700582B07 /* Profile.m */; };
-		27DEE8F21892338700582B07 /* ProfileWriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DEE8F11892338700582B07 /* ProfileWriteViewController.m */; };
 		27DEE8F61892356D00582B07 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DEE8F51892356D00582B07 /* LoginViewController.m */; };
 		9060F3BC9CD64A95A8FA6E8B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E94B2F38A194DF2B2FF4659 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -51,10 +50,13 @@
 
 /* Begin PBXFileReference section */
 		1E94B2F38A194DF2B2FF4659 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		27286F9A18978C88005D85E3 /* FeedCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedCollectionView.h; sourceTree = "<group>"; };
-		27286F9B18978C88005D85E3 /* FeedCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedCollectionView.m; sourceTree = "<group>"; };
-		27286F9D18978CEB005D85E3 /* FeedInCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedInCell.h; sourceTree = "<group>"; };
-		27286F9E18978CEB005D85E3 /* FeedInCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedInCell.m; sourceTree = "<group>"; };
+		27286FA018988C7C005D85E3 /* FeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedItem.h; sourceTree = "<group>"; };
+		27286FA118988C7D005D85E3 /* FeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedItem.m; sourceTree = "<group>"; };
+		27286FA318988F80005D85E3 /* FeedInCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedInCell.h; sourceTree = "<group>"; };
+		27286FA418988F80005D85E3 /* FeedInCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedInCell.m; sourceTree = "<group>"; };
+		27286FA618989216005D85E3 /* FeedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedView.h; sourceTree = "<group>"; };
+		27286FA718989216005D85E3 /* FeedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedView.m; sourceTree = "<group>"; };
+		27286FA9189892BA005D85E3 /* FeedDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedDelegate.h; sourceTree = "<group>"; };
 		27354C891890DEEC0097AA4E /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		27354C8A1890DEEC0097AA4E /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
 		27354C8B1890DEEC0097AA4E /* image3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.JPG; sourceTree = "<group>"; };
@@ -85,11 +87,6 @@
 		27DEE8E81891FAA300582B07 /* PetCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetCMainViewController.h; sourceTree = "<group>"; };
 		27DEE8E91891FAA300582B07 /* PetCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetCMainViewController.m; sourceTree = "<group>"; };
 		27DEE8EB1891FE1A00582B07 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
-		27DEE8ED1892306700582B07 /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
-		27DEE8EE1892306700582B07 /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
-		27DEE8F01892338700582B07 /* ProfileWriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileWriteViewController.h; sourceTree = "<group>"; };
-		27DEE8F11892338700582B07 /* ProfileWriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileWriteViewController.m; sourceTree = "<group>"; };
-		27DEE8F31892341400582B07 /* ProfileWriteCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileWriteCellDelegate.h; sourceTree = "<group>"; };
 		27DEE8F41892356D00582B07 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		27DEE8F51892356D00582B07 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		A94015CDFAFC4CFFB7D0B731 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -139,17 +136,15 @@
 		276EF3AE1890A46B000AFBE1 = {
 			isa = PBXGroup;
 			children = (
-				27286F9D18978CEB005D85E3 /* FeedInCell.h */,
-				27286F9E18978CEB005D85E3 /* FeedInCell.m */,
-				27286F9A18978C88005D85E3 /* FeedCollectionView.h */,
-				27286F9B18978C88005D85E3 /* FeedCollectionView.m */,
+				27286FA9189892BA005D85E3 /* FeedDelegate.h */,
+				27286FA618989216005D85E3 /* FeedView.h */,
+				27286FA718989216005D85E3 /* FeedView.m */,
+				27286FA318988F80005D85E3 /* FeedInCell.h */,
+				27286FA418988F80005D85E3 /* FeedInCell.m */,
+				27286FA018988C7C005D85E3 /* FeedItem.h */,
+				27286FA118988C7D005D85E3 /* FeedItem.m */,
 				27DEE8F41892356D00582B07 /* LoginViewController.h */,
 				27DEE8F51892356D00582B07 /* LoginViewController.m */,
-				27DEE8F31892341400582B07 /* ProfileWriteCellDelegate.h */,
-				27DEE8F01892338700582B07 /* ProfileWriteViewController.h */,
-				27DEE8F11892338700582B07 /* ProfileWriteViewController.m */,
-				27DEE8ED1892306700582B07 /* Profile.h */,
-				27DEE8EE1892306700582B07 /* Profile.m */,
 				27DEE8E81891FAA300582B07 /* PetCMainViewController.h */,
 				27DEE8E91891FAA300582B07 /* PetCMainViewController.m */,
 				27354C881890DEEC0097AA4E /* ImageResource */,
@@ -366,14 +361,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27286FA218988C7D005D85E3 /* FeedItem.m in Sources */,
 				27DEE8EA1891FAA300582B07 /* PetCMainViewController.m in Sources */,
-				27DEE8EF1892306700582B07 /* Profile.m in Sources */,
-				27286F9C18978C88005D85E3 /* FeedCollectionView.m in Sources */,
+				27286FA518988F80005D85E3 /* FeedInCell.m in Sources */,
 				276EF3D11890A46B000AFBE1 /* ViewController.m in Sources */,
 				276EF3CB1890A46B000AFBE1 /* AppDelegate.m in Sources */,
+				27286FA818989216005D85E3 /* FeedView.m in Sources */,
 				27DEE8F61892356D00582B07 /* LoginViewController.m in Sources */,
-				27286F9F18978CEB005D85E3 /* FeedInCell.m in Sources */,
-				27DEE8F21892338700582B07 /* ProfileWriteViewController.m in Sources */,
 				276EF3C71890A46B000AFBE1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
