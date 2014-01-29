@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FeedDelegate.h"
 
-@interface PetCMainViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDataSource, UITableViewDelegate>
+@interface PetCMainViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDataSource, UITableViewDelegate, FeedDelegate>
+
+@property (weak,nonatomic) id<FeedInfoDelegate>delegate;
 
 
 @end

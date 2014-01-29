@@ -7,8 +7,24 @@
 //
 
 #import "FeedInCell.h"
+#import "FeedItem.h"
+
+@interface FeedInCell()
+
+@property (weak, nonatomic) IBOutlet UIImageView *petImageView;
+
+
+@end
+
 
 @implementation FeedInCell
+
+
+-(void)setFeed:(FeedItem *)item
+{
+    self.petImageView.image = [UIImage imageNamed:item.petImage];
+
+}
 
 - (id)initWithFrame:(CGRect)frame
 {

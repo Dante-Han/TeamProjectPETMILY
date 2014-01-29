@@ -7,23 +7,30 @@
 //
 
 #import "PetCMainViewController.h"
-#import "FeedView.h"
+#import "FeedInfo.h"
+#import "FeedInCell.h"
+
+#define CELL_ID @"FEED_CELL"
+
 
 @interface PetCMainViewController ()
 {
         UISegmentedControl *middleSegment;
+
+
 }
 
+@property (strong,nonatomic) FeedInfo *feedInfo;
 
 @property (weak, nonatomic) IBOutlet UIView *startVoteView;
 
-@property (nonatomic, strong) NSMutableArray *dogImage;
 
 @property (weak, nonatomic) IBOutlet UITableView *HonorTable;
 @property (nonatomic, strong)NSMutableArray *honorImage;
 
+@property (weak, nonatomic) IBOutlet UICollectionView *mainCollection;
 
-@property (weak, nonatomic) IBOutlet FeedView *feedView;
+
 
 
 @property (weak, nonatomic) IBOutlet UIImageView *leftPet;
@@ -37,41 +44,77 @@
 
     _startVoteView.hidden = YES;
 
+}
+
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+
+    NSLog(@"%d",(int)[self.feedInfo feedCount]);
+    return 1;
+
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+
+
+    NSLog(@"%d",(int)[self.feedInfo feedCount]);
+
+    return [self.feedInfo feedCount];
+}
+
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    FeedInCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CELL_ID forIndexPath:indexPath];
+
+    FeedItem *feedItem = [[FeedInfo defaultFeedInfo]feedAt:(int)indexPath.row];
+
+    [cell setFeed:feedItem];
+
+
+    return  cell;
 
 }
 
 
+// custom layout
+/*-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath // cell의 크기를 정하는 걸로 보인다.
+{
+    CGSize retVal = CGRectMake(0, 0, CGFloat width, <#CGFloat height#>)
+    return retVal;
+}*/
+
+/*-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section // cell, header, footer간의 간격을 리턴한다.
+{
+    return UIEdgeInsetsMake(10,20,1,10);
+}*/
+
+-(void)middleSegment
+{
+    NSArray *items = @[@"All",@"Cute",@"Love",@"Fun",@"With"];
+    middleSegment = [[UISegmentedControl alloc]initWithItems:items];
+    middleSegment.frame = CGRectMake(90, 220, 300, 40);
+     [self.view addSubview:middleSegment];
+
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    NSArray *items = @[@"Cute",@"Comedy",@"Fun",@"etc."];
-     NSArray *versusPet;
-
-    UIImage *leftPetImage;
-    UIImage *rightPetImage;
-
-    _leftPet.image = leftPetImage;
-    _rightPet.image = rightPetImage;
-
-    middleSegment = [[UISegmentedControl alloc]initWithItems:items];
-    middleSegment.frame = CGRectMake(90, 220, 230, 40);
-
-
- /*   _dogImage=[@[@"image1.jpg",@"image2.jpg",@"image3.jpg",@"image4.jpg",
+ /* _dogImage=[@[@"image1.jpg",@"image2.jpg",@"image3.jpg",@"image4.jpg",
                  @"image5.jpg",@"image6.jpg",@"image7.jpg",@"image8.jpg"]mutableCopy];
 
     _honorImage = [@[@"image5.jpg",@"line.png",@"image4,jpg",@"line.png",@"image7.jpg"]mutableCopy];
     versusPet = [NSArray arrayWithObjects:@"image1.jpg",@"image2.jpg", nil];*/
 
+    self.feedInfo = [FeedInfo defaultFeedInfo];
 
 
-    [self. view addSubview:_leftPet];
-    [self. view addSubview:_rightPet];
-
-    [self.view addSubview:middleSegment];
-    [self.view addSubview:_feedView];
-    
+    [self middleSegment];
+    [self.mainCollection reloadData];
     [self.HonorTable reloadData];
 	// Do any additional setup after loading the view.
 }

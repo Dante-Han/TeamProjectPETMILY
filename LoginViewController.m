@@ -81,7 +81,7 @@
             return CGSizeMake(140, 110);
         }
     //}
-    /*else
+    else
     {
         if (UIInterfaceOrientationIsLandscape(orientation))
         {
@@ -194,7 +194,7 @@
 -(void)easyTableView:(EasyTableView *)easyTableView setDataForView:(UIView *)view forIndexPath:(NSIndexPath *)indexPath
 {
     UILabel *label = (UILabel *)view;
-        label.text = [NSString stringWithFormat:@"%i", indexPath.row];
+        label.text = [NSString stringWithFormat:@"%i", (int)indexPath.row];
 	BOOL isSelected = (easyTableView.selectedIndexPath) ? ([easyTableView.selectedIndexPath compare:indexPath] == NSOrderedSame) : NO;
 	[self borderIsSelected:isSelected forView:view];
 

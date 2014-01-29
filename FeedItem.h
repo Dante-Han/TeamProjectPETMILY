@@ -10,14 +10,13 @@
 
 @interface FeedItem : NSObject
 
-@property NSMutableArray *profileImage;
-@property NSMutableArray *petImage;
-@property NSMutableArray *writeDate;
-@property NSMutableArray *tag;
+@property (nonatomic)NSString *profileImage;
+@property (nonatomic)NSString *petImage;
+@property (nonatomic)NSDate *writeDate;
+@property (nonatomic)NSString *tag;
 
 //name, like, comment는 dictionary
 
--(void) setPetImage:(NSMutableArray *)petImage;
-+(id)defaultFeedItem;
++(id)feed:(NSString *)petImage;
 
 @end

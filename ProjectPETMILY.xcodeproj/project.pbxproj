@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		27286FA218988C7D005D85E3 /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 27286FA118988C7D005D85E3 /* FeedItem.m */; };
 		27286FA518988F80005D85E3 /* FeedInCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27286FA418988F80005D85E3 /* FeedInCell.m */; };
-		27286FA818989216005D85E3 /* FeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27286FA718989216005D85E3 /* FeedView.m */; };
+		27286FAC1898BDEA005D85E3 /* FeedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 27286FAB1898BDEA005D85E3 /* FeedInfo.m */; };
 		27354C911890DEEC0097AA4E /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27354C891890DEEC0097AA4E /* image1.jpg */; };
 		27354C921890DEEC0097AA4E /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27354C8A1890DEEC0097AA4E /* image2.jpg */; };
 		27354C931890DEEC0097AA4E /* image3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 27354C8B1890DEEC0097AA4E /* image3.JPG */; };
@@ -54,9 +54,9 @@
 		27286FA118988C7D005D85E3 /* FeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedItem.m; sourceTree = "<group>"; };
 		27286FA318988F80005D85E3 /* FeedInCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedInCell.h; sourceTree = "<group>"; };
 		27286FA418988F80005D85E3 /* FeedInCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedInCell.m; sourceTree = "<group>"; };
-		27286FA618989216005D85E3 /* FeedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedView.h; sourceTree = "<group>"; };
-		27286FA718989216005D85E3 /* FeedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedView.m; sourceTree = "<group>"; };
 		27286FA9189892BA005D85E3 /* FeedDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedDelegate.h; sourceTree = "<group>"; };
+		27286FAA1898BDEA005D85E3 /* FeedInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedInfo.h; sourceTree = "<group>"; };
+		27286FAB1898BDEA005D85E3 /* FeedInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedInfo.m; sourceTree = "<group>"; };
 		27354C891890DEEC0097AA4E /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		27354C8A1890DEEC0097AA4E /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
 		27354C8B1890DEEC0097AA4E /* image3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.JPG; sourceTree = "<group>"; };
@@ -117,6 +117,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27286FAD1898C173005D85E3 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				27286FA318988F80005D85E3 /* FeedInCell.h */,
+				27286FA418988F80005D85E3 /* FeedInCell.m */,
+				27286FAA1898BDEA005D85E3 /* FeedInfo.h */,
+				27286FAB1898BDEA005D85E3 /* FeedInfo.m */,
+				27286FA018988C7C005D85E3 /* FeedItem.h */,
+				27286FA118988C7D005D85E3 /* FeedItem.m */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
 		27354C881890DEEC0097AA4E /* ImageResource */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,13 +149,8 @@
 		276EF3AE1890A46B000AFBE1 = {
 			isa = PBXGroup;
 			children = (
+				27286FAD1898C173005D85E3 /* Feed */,
 				27286FA9189892BA005D85E3 /* FeedDelegate.h */,
-				27286FA618989216005D85E3 /* FeedView.h */,
-				27286FA718989216005D85E3 /* FeedView.m */,
-				27286FA318988F80005D85E3 /* FeedInCell.h */,
-				27286FA418988F80005D85E3 /* FeedInCell.m */,
-				27286FA018988C7C005D85E3 /* FeedItem.h */,
-				27286FA118988C7D005D85E3 /* FeedItem.m */,
 				27DEE8F41892356D00582B07 /* LoginViewController.h */,
 				27DEE8F51892356D00582B07 /* LoginViewController.m */,
 				27DEE8E81891FAA300582B07 /* PetCMainViewController.h */,
@@ -366,7 +374,7 @@
 				27286FA518988F80005D85E3 /* FeedInCell.m in Sources */,
 				276EF3D11890A46B000AFBE1 /* ViewController.m in Sources */,
 				276EF3CB1890A46B000AFBE1 /* AppDelegate.m in Sources */,
-				27286FA818989216005D85E3 /* FeedView.m in Sources */,
+				27286FAC1898BDEA005D85E3 /* FeedInfo.m in Sources */,
 				27DEE8F61892356D00582B07 /* LoginViewController.m in Sources */,
 				276EF3C71890A46B000AFBE1 /* main.m in Sources */,
 			);

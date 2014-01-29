@@ -13,35 +13,26 @@
 static FeedItem *_instance = nil;
 
 
-+(id)defaultFeedItem
++(id)feed:(NSString *)petImage
 {
-if(nil == _instance)
-_instance = [[FeedItem alloc]init];
-return _instance;
+    FeedItem *item = [[FeedItem alloc]init];
 
-}//싱글톤 만드는 코드
+    item.petImage = petImage;
+
+    return item;
+
+}//팩토리 메소드
 
 -(id)   init
 {
     self=[super init];
     if(self)
     {
-        self.profileImage = [[NSMutableArray alloc]init];
-        self.petImage = [[NSMutableArray alloc]init];
-        self.writeDate = [[NSMutableArray alloc]init];
-        self.tag = [[NSMutableArray alloc]init];
+
     }
+
     return self;
 }
-
--(void) setPetImage:(NSMutableArray *)petImage
-{
-    petImage = [@[@"image1.jpg",@"image2.jpg",@"image3.jpg",@"image4.jpg",@"image5.jpg",@"image6.jpg"]mutableCopy];
-
-}
-
-
-
 
 
 @end

@@ -14,8 +14,14 @@
 
 @end
 
-@protocol FeedItemDelegate <NSObject>
+@protocol FeedInfoDelegate <NSObject>
 
--(void) setPetImage:(NSMutableArray *)petImage;
+-(int)feedCount;
+
+
+@end
+
+@protocol FeedCellDelegate <NSObject>
+
 
 @end
