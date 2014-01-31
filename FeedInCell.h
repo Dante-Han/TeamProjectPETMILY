@@ -12,5 +12,5 @@
 @interface FeedInCell : UICollectionViewCell
 
 -(void)setFeed:(FeedItem *)item;
-
+-(void)setMyFeed:(FeedItem*)item;
 @end

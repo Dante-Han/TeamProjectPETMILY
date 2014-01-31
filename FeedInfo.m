@@ -9,6 +9,7 @@
 #import "FeedInfo.h"
 #import "FeedItem.h"
 
+#define LAST_INDEX 14
 
 @implementation FeedInfo
 {
@@ -29,7 +30,6 @@ static FeedInfo *_instance = nil;
 {
     return (int) feedData.count;
 }
-
 -(id)init
 {
     self = [super init];
@@ -38,7 +38,7 @@ static FeedInfo *_instance = nil;
         NSString *imageString;
         feedData = [[NSMutableArray alloc]init];
 
-        for(int i = 1; i<14; i++)
+        for(int i = 1; i<LAST_INDEX; i++)
         {
             imageString = [NSString stringWithFormat:@"image%d.jpg",i];
 
@@ -53,7 +53,15 @@ static FeedInfo *_instance = nil;
 
 -(id)feedAt:(int)index
 {
+
+    if([feedData count]<index)
+    {return [feedData objectAtIndex:1];}
+    
+    
     return [feedData objectAtIndex:index];
+
+    
+
 }
 
 

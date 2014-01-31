@@ -106,12 +106,15 @@
 }
 //segment Action
 - (IBAction)petsCupClick:(id)sender {
-    self.mypageContainer.hidden = YES;
+    
+    self.mypageContainer.hidden =YES;
     
 }
 
 - (IBAction)mypageClick:(id)sender {
-     self.mypageContainer.hidden = NO;
+    
+    self.mypageContainer.hidden = NO;
+    
 }
 
 
@@ -142,25 +145,18 @@
 
 - (IBAction)burgerShowClick:(id)sender {
 
-    BOOL moveFlag;
+    BOOL moveFlag = 0;
     
-
+  
     
-    if((int)self.burgerView.center.x == 320)
+    if(moveFlag==YES)
     {
-        moveFlag = YES;
-    }
-    else{
-        moveFlag = NO;
-    }
-    
-    if(moveFlag)
-    {
-        self.burgerView.hidden=NO;
         [UIView beginAnimations:nil context:NULL];
         [UIView setAnimationDuration:1];
         self.burgerView.center = CGPointMake(self.burgerView.center.x-270,self.burgerView.center.y);
         [UIView commitAnimations];
+        moveFlag = NO;
+
     }
     else
     {
@@ -168,6 +164,8 @@
         [UIView setAnimationDuration:0.5];
         self.burgerView.center = CGPointMake(self.burgerView.center.x+270, self.burgerView.center.y);
         [UIView commitAnimations];
+        moveFlag = YES;
+
 
     }
     

@@ -43,8 +43,17 @@
 		276EF3E61890A46B000AFBE1 /* ProjectPETMILYTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 276EF3E51890A46B000AFBE1 /* ProjectPETMILYTests.m */; };
 		27DEE8EA1891FAA300582B07 /* PetCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DEE8E91891FAA300582B07 /* PetCMainViewController.m */; };
 		27DEE8EC1891FE1A00582B07 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DEE8EB1891FE1A00582B07 /* line.png */; };
-		27DEE8F61892356D00582B07 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DEE8F51892356D00582B07 /* LoginViewController.m */; };
-		9060F3BC9CD64A95A8FA6E8B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E94B2F38A194DF2B2FF4659 /* libPods.a */; };
+		B56E933A189A0ECE0091A848 /* FamilyPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56E9339189A0ECE0091A848 /* FamilyPageViewController.m */; };
+		B56E933D189A2B2B0091A848 /* FamilyPet.m in Sources */ = {isa = PBXBuildFile; fileRef = B56E933C189A2B2B0091A848 /* FamilyPet.m */; };
+		B56E9343189A2B510091A848 /* FamilyPetInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B56E9342189A2B510091A848 /* FamilyPetInfo.m */; };
+		B56E9345189A30700091A848 /* myPet1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56E9344189A30700091A848 /* myPet1.jpg */; };
+		B56E9348189A36D20091A848 /* FamilyPetInCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B56E9347189A36D20091A848 /* FamilyPetInCell.m */; };
+		B56E934A189A3F810091A848 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B56E9349189A3F810091A848 /* images.jpeg */; };
+		B5D0B8F9189B8DC100F0B865 /* AddFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D0B8F8189B8DC100F0B865 /* AddFamilyViewController.m */; };
+		B5D0B903189B8EE500F0B865 /* SearchInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D0B902189B8EE500F0B865 /* SearchInfo.m */; };
+		B5D0B906189B8EFE00F0B865 /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D0B905189B8EFE00F0B865 /* SearchCell.m */; };
+		B5D0B909189B8F6A00F0B865 /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D0B908189B8F6A00F0B865 /* Member.m */; };
+		B5D0B90C189B962C00F0B865 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D0B90B189B962C00F0B865 /* PostViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,9 +118,27 @@
 		27DEE8E81891FAA300582B07 /* PetCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetCMainViewController.h; sourceTree = "<group>"; };
 		27DEE8E91891FAA300582B07 /* PetCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetCMainViewController.m; sourceTree = "<group>"; };
 		27DEE8EB1891FE1A00582B07 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
-		27DEE8F41892356D00582B07 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		27DEE8F51892356D00582B07 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		A94015CDFAFC4CFFB7D0B731 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B56E9338189A0ECE0091A848 /* FamilyPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyPageViewController.h; sourceTree = "<group>"; };
+		B56E9339189A0ECE0091A848 /* FamilyPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyPageViewController.m; sourceTree = "<group>"; };
+		B56E933B189A2B2B0091A848 /* FamilyPet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyPet.h; sourceTree = "<group>"; };
+		B56E933C189A2B2B0091A848 /* FamilyPet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyPet.m; sourceTree = "<group>"; };
+		B56E9341189A2B510091A848 /* FamilyPetInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyPetInfo.h; sourceTree = "<group>"; };
+		B56E9342189A2B510091A848 /* FamilyPetInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyPetInfo.m; sourceTree = "<group>"; };
+		B56E9344189A30700091A848 /* myPet1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = myPet1.jpg; sourceTree = "<group>"; };
+		B56E9346189A36D20091A848 /* FamilyPetInCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyPetInCell.h; sourceTree = "<group>"; };
+		B56E9347189A36D20091A848 /* FamilyPetInCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyPetInCell.m; sourceTree = "<group>"; };
+		B56E9349189A3F810091A848 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		B5D0B8F7189B8DC100F0B865 /* AddFamilyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFamilyViewController.h; sourceTree = "<group>"; };
+		B5D0B8F8189B8DC100F0B865 /* AddFamilyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFamilyViewController.m; sourceTree = "<group>"; };
+		B5D0B901189B8EE500F0B865 /* SearchInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchInfo.h; sourceTree = "<group>"; };
+		B5D0B902189B8EE500F0B865 /* SearchInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchInfo.m; sourceTree = "<group>"; };
+		B5D0B904189B8EFE00F0B865 /* SearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCell.h; sourceTree = "<group>"; };
+		B5D0B905189B8EFE00F0B865 /* SearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCell.m; sourceTree = "<group>"; };
+		B5D0B907189B8F6A00F0B865 /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
+		B5D0B908189B8F6A00F0B865 /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
+		B5D0B90A189B962C00F0B865 /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		B5D0B90B189B962C00F0B865 /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +149,6 @@
 				276EF3BD1890A46B000AFBE1 /* CoreGraphics.framework in Frameworks */,
 				276EF3BF1890A46B000AFBE1 /* UIKit.framework in Frameworks */,
 				276EF3BB1890A46B000AFBE1 /* Foundation.framework in Frameworks */,
-				9060F3BC9CD64A95A8FA6E8B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +181,7 @@
 		27286FAD1898C173005D85E3 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				27286FA9189892BA005D85E3 /* FeedDelegate.h */,
 				27286FA318988F80005D85E3 /* FeedInCell.h */,
 				27286FA418988F80005D85E3 /* FeedInCell.m */,
 				27286FAA1898BDEA005D85E3 /* FeedInfo.h */,
@@ -168,6 +195,8 @@
 		27354C881890DEEC0097AA4E /* ImageResource */ = {
 			isa = PBXGroup;
 			children = (
+				B56E9349189A3F810091A848 /* images.jpeg */,
+				B56E9344189A30700091A848 /* myPet1.jpg */,
 				2702A23B1898F25F0091837A /* image9.jpg */,
 				2702A23C1898F25F0091837A /* image10.jpg */,
 				2702A23D1898F25F0091837A /* image11.jpg */,
@@ -189,15 +218,23 @@
 		276EF3AE1890A46B000AFBE1 = {
 			isa = PBXGroup;
 			children = (
+				B5D0B90A189B962C00F0B865 /* PostViewController.h */,
+				B5D0B90B189B962C00F0B865 /* PostViewController.m */,
+				B5D0B907189B8F6A00F0B865 /* Member.h */,
+				B5D0B908189B8F6A00F0B865 /* Member.m */,
+				B5D0B904189B8EFE00F0B865 /* SearchCell.h */,
+				B5D0B905189B8EFE00F0B865 /* SearchCell.m */,
+				B5D0B901189B8EE500F0B865 /* SearchInfo.h */,
+				B5D0B902189B8EE500F0B865 /* SearchInfo.m */,
+				B5D0B8FA189B8DD100F0B865 /* FamilyPet */,
+				B5D0B8F7189B8DC100F0B865 /* AddFamilyViewController.h */,
+				B5D0B8F8189B8DC100F0B865 /* AddFamilyViewController.m */,
 				2702A23A1898E8440091837A /* Honor */,
 				27286FAD1898C173005D85E3 /* Feed */,
-				27286FA9189892BA005D85E3 /* FeedDelegate.h */,
-				27DEE8F41892356D00582B07 /* LoginViewController.h */,
-				27DEE8F51892356D00582B07 /* LoginViewController.m */,
-				27DEE8E81891FAA300582B07 /* PetCMainViewController.h */,
-				27DEE8E91891FAA300582B07 /* PetCMainViewController.m */,
 				2702A22E1898E34C0091837A /* burgerView.h */,
 				2702A22F1898E34C0091837A /* burgerView.m */,
+				27DEE8E81891FAA300582B07 /* PetCMainViewController.h */,
+				27DEE8E91891FAA300582B07 /* PetCMainViewController.m */,
 				27354C881890DEEC0097AA4E /* ImageResource */,
 				276EF3C01890A46B000AFBE1 /* ProjectPETMILY */,
 				276EF3DF1890A46B000AFBE1 /* ProjectPETMILYTests */,
@@ -269,6 +306,21 @@
 				276EF3E21890A46B000AFBE1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5D0B8FA189B8DD100F0B865 /* FamilyPet */ = {
+			isa = PBXGroup;
+			children = (
+				B56E9346189A36D20091A848 /* FamilyPetInCell.h */,
+				B56E9347189A36D20091A848 /* FamilyPetInCell.m */,
+				B56E9341189A2B510091A848 /* FamilyPetInfo.h */,
+				B56E9342189A2B510091A848 /* FamilyPetInfo.m */,
+				B56E933B189A2B2B0091A848 /* FamilyPet.h */,
+				B56E933C189A2B2B0091A848 /* FamilyPet.m */,
+				B56E9338189A0ECE0091A848 /* FamilyPageViewController.h */,
+				B56E9339189A0ECE0091A848 /* FamilyPageViewController.m */,
+			);
+			name = FamilyPet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,8 +416,10 @@
 				27354C941890DEEC0097AA4E /* image4.jpg in Resources */,
 				27354C961890DEEC0097AA4E /* image6.jpg in Resources */,
 				276EF3CE1890A46B000AFBE1 /* Main.storyboard in Resources */,
+				B56E934A189A3F810091A848 /* images.jpeg in Resources */,
 				27354C931890DEEC0097AA4E /* image3.JPG in Resources */,
 				27DEE8EC1891FE1A00582B07 /* line.png in Resources */,
+				B56E9345189A30700091A848 /* myPet1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,16 +472,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				27286FA218988C7D005D85E3 /* FeedItem.m in Sources */,
+				B56E9343189A2B510091A848 /* FamilyPetInfo.m in Sources */,
 				2702A2301898E34C0091837A /* burgerView.m in Sources */,
+				B5D0B903189B8EE500F0B865 /* SearchInfo.m in Sources */,
+				B5D0B90C189B962C00F0B865 /* PostViewController.m in Sources */,
+				B56E9348189A36D20091A848 /* FamilyPetInCell.m in Sources */,
 				2702A2361898E7DC0091837A /* HonorList.m in Sources */,
 				2702A2331898E7BC0091837A /* HonorCell.m in Sources */,
+				B56E933A189A0ECE0091A848 /* FamilyPageViewController.m in Sources */,
 				27DEE8EA1891FAA300582B07 /* PetCMainViewController.m in Sources */,
+				B5D0B909189B8F6A00F0B865 /* Member.m in Sources */,
 				27286FA518988F80005D85E3 /* FeedInCell.m in Sources */,
 				276EF3D11890A46B000AFBE1 /* ViewController.m in Sources */,
+				B5D0B906189B8EFE00F0B865 /* SearchCell.m in Sources */,
 				276EF3CB1890A46B000AFBE1 /* AppDelegate.m in Sources */,
 				2702A2391898E83F0091837A /* HonorInfo.m in Sources */,
 				27286FAC1898BDEA005D85E3 /* FeedInfo.m in Sources */,
-				27DEE8F61892356D00582B07 /* LoginViewController.m in Sources */,
+				B56E933D189A2B2B0091A848 /* FamilyPet.m in Sources */,
+				B5D0B8F9189B8DC100F0B865 /* AddFamilyViewController.m in Sources */,
 				276EF3C71890A46B000AFBE1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

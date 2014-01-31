@@ -10,7 +10,7 @@
 
 @implementation FeedItem
 
-static FeedItem *_instance = nil;
+
 
 
 +(id)feed:(NSString *)petImage

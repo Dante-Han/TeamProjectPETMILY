@@ -12,6 +12,7 @@
 @interface FeedInCell()
 
 @property (weak, nonatomic) IBOutlet UIImageView *petImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *myPetImageView;
 
 @end
 
@@ -23,6 +24,11 @@
     self.petImageView.image = [UIImage imageNamed:item.petImage];
 
 }
+-(void)setMyFeed:(FeedItem*)item
+{
+    self.myPetImageView.image =[UIImage imageNamed:item.petImage];
+}
+
 
 - (id)initWithFrame:(CGRect)frame
 {

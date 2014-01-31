@@ -1,2 +1,1 @@
-pod 'EasyTableView', '~> 1.1.1'
-pod 'JASidePanels', '~> 1.3.2'
+pod 'ALRadial', '~> 0.1.0'
