@@ -31,6 +31,7 @@
 @property (strong,nonatomic) HonorInfo *honorInfo;
 
 @property (weak, nonatomic) IBOutlet UIView *startVoteView;
+@property (weak, nonatomic) IBOutlet UIView *mypageContainer;
 
 
 @property (weak, nonatomic) IBOutlet UITableView *HonorTable;
@@ -43,17 +44,21 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *leftPet;
 @property (weak, nonatomic) IBOutlet UIImageView *rightPet;
+@property (weak, nonatomic) IBOutlet UIView *notificationContainer;
 
 
-@property (weak, nonatomic) IBOutlet UIView *myPageContainer;
 
 
 @end
 
 @implementation PetCMainViewController
 
-- (IBAction)myPageClick:(id)sender {
-    self.myPageContainer.hidden = NO;
+- (IBAction)myPageContainer:(id)sender {
+    
+    self.mypageContainer.hidden=NO;
+}
+- (IBAction)notificationClick:(id)sender {
+    self.mypageContainer.hidden=NO;
 }
 
 - (IBAction)startVoteClick:(id)sender {
