@@ -16,16 +16,12 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
+- (void)awakeFromNib
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"contentController"];
+    
+    self.menuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"menuController"];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

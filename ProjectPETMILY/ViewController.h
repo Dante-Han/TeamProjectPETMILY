@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <REFrostedViewController.h>
+@interface ViewController : REFrostedViewController
 
-@interface ViewController : UIViewController
+
 
 @end

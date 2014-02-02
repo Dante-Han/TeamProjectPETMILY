@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2702A2301898E34C0091837A /* burgerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2702A22F1898E34C0091837A /* burgerView.m */; };
 		2702A2331898E7BC0091837A /* HonorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2702A2321898E7BC0091837A /* HonorCell.m */; };
 		2702A2361898E7DC0091837A /* HonorList.m in Sources */ = {isa = PBXBuildFile; fileRef = 2702A2351898E7DC0091837A /* HonorList.m */; };
 		2702A2391898E83F0091837A /* HonorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2702A2381898E83F0091837A /* HonorInfo.m */; };
@@ -43,6 +42,11 @@
 		276EF3E61890A46B000AFBE1 /* ProjectPETMILYTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 276EF3E51890A46B000AFBE1 /* ProjectPETMILYTests.m */; };
 		27DEE8EA1891FAA300582B07 /* PetCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DEE8E91891FAA300582B07 /* PetCMainViewController.m */; };
 		27DEE8EC1891FE1A00582B07 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DEE8EB1891FE1A00582B07 /* line.png */; };
+		B54518F2189E191A009228E2 /* BugerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54518F1189E191A009228E2 /* BugerViewController.m */; };
+		B54518F5189E1F5A009228E2 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54518F4189E1F5A009228E2 /* NavigationViewController.m */; };
+		B54518F8189E2AD2009228E2 /* NotiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54518F7189E2AD2009228E2 /* NotiViewController.m */; };
+		B54518FA189E2ECF009228E2 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B54518F9189E2ECF009228E2 /* 1.jpg */; };
+		B54518FC189E3922009228E2 /* hamburger.png in Resources */ = {isa = PBXBuildFile; fileRef = B54518FB189E3922009228E2 /* hamburger.png */; };
 		B56E933A189A0ECE0091A848 /* FamilyPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56E9339189A0ECE0091A848 /* FamilyPageViewController.m */; };
 		B56E933D189A2B2B0091A848 /* FamilyPet.m in Sources */ = {isa = PBXBuildFile; fileRef = B56E933C189A2B2B0091A848 /* FamilyPet.m */; };
 		B56E9343189A2B510091A848 /* FamilyPetInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B56E9342189A2B510091A848 /* FamilyPetInfo.m */; };
@@ -54,6 +58,7 @@
 		B5D0B906189B8EFE00F0B865 /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D0B905189B8EFE00F0B865 /* SearchCell.m */; };
 		B5D0B909189B8F6A00F0B865 /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D0B908189B8F6A00F0B865 /* Member.m */; };
 		B5D0B90C189B962C00F0B865 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D0B90B189B962C00F0B865 /* PostViewController.m */; };
+		E50A6E79D34A485BBA6B2E57 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E94B2F38A194DF2B2FF4659 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +73,6 @@
 
 /* Begin PBXFileReference section */
 		1E94B2F38A194DF2B2FF4659 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2702A22E1898E34C0091837A /* burgerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = burgerView.h; sourceTree = "<group>"; };
-		2702A22F1898E34C0091837A /* burgerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = burgerView.m; sourceTree = "<group>"; };
 		2702A2311898E7BC0091837A /* HonorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HonorCell.h; sourceTree = "<group>"; };
 		2702A2321898E7BC0091837A /* HonorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HonorCell.m; sourceTree = "<group>"; };
 		2702A2341898E7DC0091837A /* HonorList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HonorList.h; sourceTree = "<group>"; };
@@ -119,6 +122,14 @@
 		27DEE8E91891FAA300582B07 /* PetCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetCMainViewController.m; sourceTree = "<group>"; };
 		27DEE8EB1891FE1A00582B07 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		A94015CDFAFC4CFFB7D0B731 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B54518F0189E191A009228E2 /* BugerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BugerViewController.h; sourceTree = "<group>"; };
+		B54518F1189E191A009228E2 /* BugerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BugerViewController.m; sourceTree = "<group>"; };
+		B54518F3189E1F5A009228E2 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		B54518F4189E1F5A009228E2 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		B54518F6189E2AD2009228E2 /* NotiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotiViewController.h; sourceTree = "<group>"; };
+		B54518F7189E2AD2009228E2 /* NotiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotiViewController.m; sourceTree = "<group>"; };
+		B54518F9189E2ECF009228E2 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = ../1.jpg; sourceTree = "<group>"; };
+		B54518FB189E3922009228E2 /* hamburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburger.png; sourceTree = "<group>"; };
 		B56E9338189A0ECE0091A848 /* FamilyPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyPageViewController.h; sourceTree = "<group>"; };
 		B56E9339189A0ECE0091A848 /* FamilyPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyPageViewController.m; sourceTree = "<group>"; };
 		B56E933B189A2B2B0091A848 /* FamilyPet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyPet.h; sourceTree = "<group>"; };
@@ -149,6 +160,7 @@
 				276EF3BD1890A46B000AFBE1 /* CoreGraphics.framework in Frameworks */,
 				276EF3BF1890A46B000AFBE1 /* UIKit.framework in Frameworks */,
 				276EF3BB1890A46B000AFBE1 /* Foundation.framework in Frameworks */,
+				E50A6E79D34A485BBA6B2E57 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +207,8 @@
 		27354C881890DEEC0097AA4E /* ImageResource */ = {
 			isa = PBXGroup;
 			children = (
+				B54518FB189E3922009228E2 /* hamburger.png */,
+				B54518F9189E2ECF009228E2 /* 1.jpg */,
 				B56E9349189A3F810091A848 /* images.jpeg */,
 				B56E9344189A30700091A848 /* myPet1.jpg */,
 				2702A23B1898F25F0091837A /* image9.jpg */,
@@ -218,6 +232,9 @@
 		276EF3AE1890A46B000AFBE1 = {
 			isa = PBXGroup;
 			children = (
+				B54518F6189E2AD2009228E2 /* NotiViewController.h */,
+				B54518F7189E2AD2009228E2 /* NotiViewController.m */,
+				B54518EF189E185A009228E2 /* BurgerMenu */,
 				B5D0B90A189B962C00F0B865 /* PostViewController.h */,
 				B5D0B90B189B962C00F0B865 /* PostViewController.m */,
 				B5D0B907189B8F6A00F0B865 /* Member.h */,
@@ -231,8 +248,6 @@
 				B5D0B8F8189B8DC100F0B865 /* AddFamilyViewController.m */,
 				2702A23A1898E8440091837A /* Honor */,
 				27286FAD1898C173005D85E3 /* Feed */,
-				2702A22E1898E34C0091837A /* burgerView.h */,
-				2702A22F1898E34C0091837A /* burgerView.m */,
 				27DEE8E81891FAA300582B07 /* PetCMainViewController.h */,
 				27DEE8E91891FAA300582B07 /* PetCMainViewController.m */,
 				27354C881890DEEC0097AA4E /* ImageResource */,
@@ -306,6 +321,17 @@
 				276EF3E21890A46B000AFBE1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B54518EF189E185A009228E2 /* BurgerMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B54518F3189E1F5A009228E2 /* NavigationViewController.h */,
+				B54518F4189E1F5A009228E2 /* NavigationViewController.m */,
+				B54518F0189E191A009228E2 /* BugerViewController.h */,
+				B54518F1189E191A009228E2 /* BugerViewController.m */,
+			);
+			name = BurgerMenu;
 			sourceTree = "<group>";
 		};
 		B5D0B8FA189B8DD100F0B865 /* FamilyPet */ = {
@@ -402,11 +428,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2702A2431898F25F0091837A /* image12.jpg in Resources */,
+				B54518FC189E3922009228E2 /* hamburger.png in Resources */,
 				276EF3D31890A46B000AFBE1 /* Images.xcassets in Resources */,
 				27354C981890DEEC0097AA4E /* image8.JPG in Resources */,
 				2702A2421898F25F0091837A /* image11.jpg in Resources */,
 				27354C971890DEEC0097AA4E /* image7.JPG in Resources */,
 				2702A2401898F25F0091837A /* image9.jpg in Resources */,
+				B54518FA189E2ECF009228E2 /* 1.jpg in Resources */,
 				27354C951890DEEC0097AA4E /* image5.jpg in Resources */,
 				2702A2441898F25F0091837A /* image13.jpg in Resources */,
 				27354C921890DEEC0097AA4E /* image2.jpg in Resources */,
@@ -473,9 +501,10 @@
 			files = (
 				27286FA218988C7D005D85E3 /* FeedItem.m in Sources */,
 				B56E9343189A2B510091A848 /* FamilyPetInfo.m in Sources */,
-				2702A2301898E34C0091837A /* burgerView.m in Sources */,
+				B54518F5189E1F5A009228E2 /* NavigationViewController.m in Sources */,
 				B5D0B903189B8EE500F0B865 /* SearchInfo.m in Sources */,
 				B5D0B90C189B962C00F0B865 /* PostViewController.m in Sources */,
+				B54518F2189E191A009228E2 /* BugerViewController.m in Sources */,
 				B56E9348189A36D20091A848 /* FamilyPetInCell.m in Sources */,
 				2702A2361898E7DC0091837A /* HonorList.m in Sources */,
 				2702A2331898E7BC0091837A /* HonorCell.m in Sources */,
@@ -484,6 +513,7 @@
 				B5D0B909189B8F6A00F0B865 /* Member.m in Sources */,
 				27286FA518988F80005D85E3 /* FeedInCell.m in Sources */,
 				276EF3D11890A46B000AFBE1 /* ViewController.m in Sources */,
+				B54518F8189E2AD2009228E2 /* NotiViewController.m in Sources */,
 				B5D0B906189B8EFE00F0B865 /* SearchCell.m in Sources */,
 				276EF3CB1890A46B000AFBE1 /* AppDelegate.m in Sources */,
 				2702A2391898E83F0091837A /* HonorInfo.m in Sources */,

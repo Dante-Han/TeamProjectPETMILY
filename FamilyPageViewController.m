@@ -11,7 +11,7 @@
 #import "FeedInfo.h"
 #import "FamilyPetInCell.h"
 #import "FamilyPetInfo.h"
-
+#import <REFrostedViewController.h>
 
 
 @interface FamilyPageViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
@@ -27,6 +27,7 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *feedCollection;
 @property (weak, nonatomic) IBOutlet UIView *writeContainer;
 
+@property (weak, nonatomic) IBOutlet UIView *PetCMainContainer;
 
 @end
 
@@ -121,6 +122,11 @@
     
 	// Do any additional setup after loading the view.
 }
+- (IBAction)burgerClick:(id)sender {
+    [self.frostedViewController presentMenuViewController];
+
+}
+
 
 - (void)didReceiveMemoryWarning
 {

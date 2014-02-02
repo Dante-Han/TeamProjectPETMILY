@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "FeedDelegate.h"
+#import <REFrostedViewController.h>
 
-@interface PetCMainViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDataSource, UITableViewDelegate, FeedDelegate>
+@interface PetCMainViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDataSource, UITableViewDelegate>
 
 @property (weak,nonatomic) id<FeedInfoDelegate>delegate;
 

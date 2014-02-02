@@ -11,7 +11,7 @@
 #import "FeedInCell.h"
 #import "HonorInfo.h"
 #import "HonorCell.h"
-
+#import <REFrostedViewController.h>
 
 
 #define CELL_ID @"FEED_CELL"
@@ -23,10 +23,9 @@
 
 
 }
-@property (weak, nonatomic) IBOutlet UIView *mypageContainer;
 
-@property (weak, nonatomic) IBOutlet UIView *burgerView;
 
+@property (nonatomic, strong) NSMutableIndexSet *optionIndices;
 
 @property (strong,nonatomic) FeedInfo *feedInfo;
 @property (strong,nonatomic) HonorInfo *honorInfo;
@@ -45,9 +44,17 @@
 @property (weak, nonatomic) IBOutlet UIImageView *leftPet;
 @property (weak, nonatomic) IBOutlet UIImageView *rightPet;
 
+
+@property (weak, nonatomic) IBOutlet UIView *myPageContainer;
+
+
 @end
 
 @implementation PetCMainViewController
+
+- (IBAction)myPageClick:(id)sender {
+    self.myPageContainer.hidden = NO;
+}
 
 - (IBAction)startVoteClick:(id)sender {
 
@@ -92,11 +99,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.optionIndices = [NSMutableIndexSet indexSetWithIndex:1];
+
 
     self.feedInfo = [FeedInfo defaultFeedInfo];
 
     self.honorInfo = [HonorInfo defaultHonor];
-    self.burgerView.hidden = YES;
 
 
     [self.mainCollection reloadData];
@@ -105,17 +114,6 @@
 	// Do any additional setup after loading the view.
 }
 //segment Action
-- (IBAction)petsCupClick:(id)sender {
-    
-    self.mypageContainer.hidden =YES;
-    
-}
-
-- (IBAction)mypageClick:(id)sender {
-    
-    self.mypageContainer.hidden = NO;
-    
-}
 
 
 // table view delegate
@@ -143,35 +141,15 @@
     return cell;
 }
 
+
+
 - (IBAction)burgerShowClick:(id)sender {
 
-    BOOL moveFlag = 0;
-    
-  
-    
-    if(moveFlag==YES)
-    {
-        [UIView beginAnimations:nil context:NULL];
-        [UIView setAnimationDuration:1];
-        self.burgerView.center = CGPointMake(self.burgerView.center.x-270,self.burgerView.center.y);
-        [UIView commitAnimations];
-        moveFlag = NO;
-
-    }
-    else
-    {
-        [UIView beginAnimations:nil context:NULL];
-        [UIView setAnimationDuration:0.5];
-        self.burgerView.center = CGPointMake(self.burgerView.center.x+270, self.burgerView.center.y);
-        [UIView commitAnimations];
-        moveFlag = YES;
-
-
-    }
-    
-        
+ 
+    [self.frostedViewController presentMenuViewController];
     
 }
+
 
 
 - (IBAction)handleSegmentSelection:(id)sender {

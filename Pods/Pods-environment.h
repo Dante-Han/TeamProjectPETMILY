@@ -6,15 +6,9 @@
 // project.
 
 
-// EasyTableView
-#define COCOAPODS_POD_AVAILABLE_EasyTableView
-#define COCOAPODS_VERSION_MAJOR_EasyTableView 1
-#define COCOAPODS_VERSION_MINOR_EasyTableView 1
-#define COCOAPODS_VERSION_PATCH_EasyTableView 1
-
-// JASidePanels
-#define COCOAPODS_POD_AVAILABLE_JASidePanels
-#define COCOAPODS_VERSION_MAJOR_JASidePanels 1
-#define COCOAPODS_VERSION_MINOR_JASidePanels 3
-#define COCOAPODS_VERSION_PATCH_JASidePanels 2
+// REFrostedViewController
+#define COCOAPODS_POD_AVAILABLE_REFrostedViewController
+#define COCOAPODS_VERSION_MAJOR_REFrostedViewController 2
+#define COCOAPODS_VERSION_MINOR_REFrostedViewController 4
+#define COCOAPODS_VERSION_PATCH_REFrostedViewController 2
 

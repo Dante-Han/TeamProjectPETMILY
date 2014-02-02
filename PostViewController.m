@@ -17,10 +17,9 @@
 @end
 
 @implementation PostViewController
-- (IBAction)backClick:(id)sender {
-    self.view.hidden = YES;
+
     
-}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
